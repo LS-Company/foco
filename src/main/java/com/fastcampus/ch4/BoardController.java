@@ -14,6 +14,7 @@ import java.util.*;
 
 @Controller
 @RequestMapping("/board")
+//weser
 public class BoardController {
     @Autowired
     BoardService boardService;
