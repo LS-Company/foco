@@ -85,13 +85,13 @@ public class BoardDto {
         this.view_cnt = view_cnt;
     }
 
-    public int getComment_cnt() {
-        return comment_cnt;
-    }
-
-    public void setComment_cnt(int comment_cnt) {
-        this.comment_cnt = comment_cnt;
-    }
+//    public int getComment_cnt() {
+//        return comment_cnt;
+//    }
+//
+//    public void setComment_cnt(int comment_cnt) {
+//        this.comment_cnt = comment_cnt;
+//    }
 
     public Date getReg_date() {
         return reg_date;

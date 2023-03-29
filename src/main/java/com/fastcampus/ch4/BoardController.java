@@ -13,6 +13,9 @@ import java.time.*;
 import java.util.*;
 
 @Controller
+
+
+
 @RequestMapping("/board")
 //weser
 public class BoardController {
@@ -39,7 +42,13 @@ public class BoardController {
         }
 
     }
-@GetMapping("/write")
+    @GetMapping("/registerAdd")
+    public String add(){
+        return "registerAdd";
+    }
+
+
+    @GetMapping("/write")
     public String write(Model m){
     m.addAttribute("mode","new");
     return "board";

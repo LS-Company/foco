@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Foco</title>
+    <title>fastcampus</title>
     <link rel="stylesheet" href="<c:url value='/css/menu.css'/>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
@@ -71,7 +71,7 @@
         <li><a href="<c:url value='/'/>">Home</a></li>
         <li><a href="<c:url value='/board/list'/>">Board</a></li>
         <li><a href="<c:url value='${loginOutLink}'/>">${loginOut}</a></li>
-        <li><a href="<c:url value='/register/add'/>">Sign in</a></li>
+        <li><a href="<c:url value='/registerAdd'/>">Sign in</a></li>
         <li><a href=""><i class="fa fa-search"></i></a></li>
     </ul>
 </div>
@@ -148,13 +148,6 @@
             if(!confirm("정말로 삭제하시겠습니까?")) return;
             let form = $("#form");
             form.attr("action", "<c:url value='/board/remove${searchCondition.queryString}'/>");
-            form.attr("method", "post");
-            form.submit();
-        });
-        $("#writeBtn").on("click", function(){
-            if(!confirm("정말로 삭제하시겠습니까?")) return;
-            let form = $("#form");
-            form.attr("action", "<c:url value='/board/write'/>");
             form.attr("method", "post");
             form.submit();
         });

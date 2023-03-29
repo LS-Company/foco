@@ -65,7 +65,7 @@
         <li><a href="<c:url value='/'/>">Home</a></li>
         <li><a href="<c:url value='/board/list'/>">Board</a></li>
         <li><a href="<c:url value='${loginOutLink}'/>">${loginOut}</a></li>
-        <li><a href="<c:url value='/register/add'/>">Sign in</a></li>
+        <li><a href="<c:url value='/register_add'/>">Sign in</a></li>
         <li><a href=""><i class="fa fa-search"></i></a></li>
     </ul>
 </div>
@@ -83,7 +83,7 @@
     <div>
         <label><input type="checkbox" name="rememberId" value="on" ${empty cookie.id.value ? "":"checked"}> 아이디 기억</label> |
         <a href="">비밀번호 찾기</a> |
-        <a href="">회원가입</a>
+        <a href="<c:url value='/registerAdd'/>">회원가입</a>
     </div>
     <script>
         function formCheck(frm) {
