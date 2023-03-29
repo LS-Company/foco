@@ -194,8 +194,8 @@
     </div>
     <div class="area">
         <select id="area">
-            <option selected disabled>지역을 선택하세요.</option>
-            <option>서울</option>
+            <option selected disabled>Select Language</option>
+            <option>한국어</option>
             <option>인천</option>
             <option>경기</option>
         </select>

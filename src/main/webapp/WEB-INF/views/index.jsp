@@ -39,7 +39,7 @@
         width: 100%;
         height: 110px;
         border: 1px solid #ddd;
-        margin-top : 10px;
+        margin-top : 50px;
         margin-bottom: 30px;
         display: flex;
         justify-content: center;
@@ -151,12 +151,13 @@
 <head>
     <meta charset="UTF-8">
     <title>fastcampus</title>
-    <link rel="stylesheet" href="<c:url value='/css/menu.css'/>">
+    <%--    <link rel="stylesheet" href="<c:url value='/css/menu.css'/>">--%>
+    <link rel="stylesheet" href="<c:url value='/css/stylepractice.css'/>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
 </head>
 <body>
 <div id="menu">
-    <ul>
+    <ul class="menubar">
         <li id="logo">fastcampus</li>
         <li><a href="<c:url value='/'/>">Home</a></li>
         <li><a href="<c:url value='/board/list'/>">Board</a></li>
@@ -165,8 +166,8 @@
         <li><a href=""><i class="fa fa-search"></i></a></li>
     </ul>
 </div>
-<div style="text-align:center">
-    <div class="board-container">
+<div class="wrap">
+    <div class="box1 clearfix">
         <div class="search-container">
             <form action="<c:url value="/board/list"/>" class="search-form" method="get">
                 <select class="search-option" name="option">
@@ -225,72 +226,32 @@
                 </c:if>
             </div>
         </div>
-
-        <div class="box2 clearfix">
-            <!-- 환율 -->
-            <ul class="money">
-                <li><img src="/flags-icons/KakaoTalk_20230328_145814285.png" alt="america"></li>
-                <li><a href="#">1111.1&#8361;</a></li>
-                <li><img src="/flags-icons/KakaoTalk_20230328_145814285.png" alt="america"></li>
-                <li><a href="#">2222.2&#8361;</a></li>
-                <li><img src="/flags-icons/KakaoTalk_20230328_145814285.png" alt="america"></li>
-                <li><a href="#">3333.3&#8361;</a></li>
-                <img src="/flags-icons/KakaoTalk_20230328_145814285.png" alt="america"></li>
-                <li><a href="#">4444.4&#8361;</a></li>
-            </ul>
-
-
-
-            <!-- 아티클 -->
-            <article>
-                <!-- 뉴스 -->
-                <ul class="news">
-                    <li><a href="#">뉴스1</a></li>
-                    <li><a href="#">뉴스2</a></li>
-                    <li><a href="#">뉴스3</a></li>
-                </ul>
-            </article>
-            <!--  어사이드 -->
-            <aside>
-                취업정보
-            </aside>
-        </div>
     </div>
-</div>
-<div style="text-align:center">
-    <h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Log In
-        </button>
+    <div class="box2 clearfix">
+        <!-- 환율 -->
+        <ul class="money">
+            <li><img src= "<c:url value='/img/us.png' />" alt="america"></li>
+            <li><a href="#">1111.1&#8361;</a></li>
+            <li><img src="<c:url value='/img/us.png' />" alt="america"></li>
+            <li><a href="#">2222.2&#8361;</a></li>
+            <li><img src="<c:url value='/img/us.png' />" alt="america"></li>
+            <li><a href="#">3333.3&#8361;</a></li>
+            <li><img src="<c:url value='/img/us.png' />" alt="america"></li>
+            <li><a href="#">4444.4&#8361;</a></li>
+        </ul>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div>
-                            <h5 style="font-size: 20px;">아이디</h5>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <h5 style="font-size: 20px;">비밀번호</h5>
-                            <input type="text">
-                        </div>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='BootstrapPr2.html' ">아이디/비밀번호 찾기</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="location.href='BootstrapPr2.html' ">회원가입</button>
-                        <button type="button" class="btn btn-primary">로그인</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </h1>
+
+        <!-- 아티클 -->
+        <article>
+            <!-- 뉴스 -->
+            뉴스
+        </article>
+        <!--  어사이드 -->
+        <aside>
+            취업정보
+        </aside>
+    </div>
 </div>
 </body>
 </html>
