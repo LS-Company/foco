@@ -194,7 +194,7 @@ section:hover {
 .money li {
   margin-left: 0;
   display: inline-block;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 .money li:first-child {
@@ -220,7 +220,7 @@ article {
   line-height: 150px;
   width: 480px;
   height: 500px;
-  background-color: tomato;
+  background-color: #a9a9a9;
   border-radius: 10px;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -264,7 +264,7 @@ aside {
   margin: 0 auto;
 
   border-radius: 10px;
-  background-color: orange;
+  background-color: #a9a9a9;
   color: #FFF;
 }
 
